@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<form [formGroup]="formGroup" (ngSubmit)="doSearch()" class="cmp-search-form">
+    <label for="">
+        <b>SEARCH</b>
+        <input type="text" formControlName="search"/>
+    </label>
+    <button type="submit">
+        <span class="material-symbols-outlined">
+            search
+        </span>
+    </button>
+    <br>
+</form>
+
+<div class="group-buttion">
+    <button type="button" [disabled]="!data.previous" (click)="changepage(data.previous?.searchParams)" class="cmp-buttion">Previous</button>
+    <button type="next" [disabled]="!data.next" (click)="changepage(data.next?.searchParams)" class="cmp-buttion">Next</button>
+</div>
+
+<div *ngFor="let item of data.results" (click)="doSelect(item)" tabindex="0"   (keydown.enter)="doSelect(item)">
+    {{item.name}}
+
+</div>

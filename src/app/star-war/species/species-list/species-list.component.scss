@@ -1,0 +1,78 @@
+form {
+    text-align: center;
+    margin: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form > button{
+    background-color: #0C0901;
+    color: #F2B54C;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.cmp-search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  
+    margin-bottom: 8px;
+  
+    & > label {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  
+      flex: 1 0 auto;
+  
+      & > input {
+        margin-left: 1ch;
+        box-sizing: border-box;
+        height: 100%;
+        flex: 1 0 auto;
+      }
+    }
+  }
+
+.cmp-buttion{
+    background-color: #0C0901;
+    color: #F2B54C;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.cmp-buttion:hover {
+    background-color: #fff;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+.group-buttion{
+    text-align: right;
+    margin-right: 3%;
+}
+div{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2%;
+  }
+
+  div:hover{
+    color: tomato;
+    cursor:pointer;
+  }
